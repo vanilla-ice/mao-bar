@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Lobster|Poiret+One&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic');
+
+
+  .food {
+    &-item {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      width: 30%;
+      border: 2px solid black;
+      margin-bottom: 2.2vw;
+      margin-right: 5%;
+      position: relative;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+      &-name {
+        font-family: 'Russo One', sans-serif;
+        text-align: left;
+        padding: 5px 5px;
+      }
+
+      &-description {
+        font-family: 'Russo One';
+        font-size: 11px;
+      }
+
+      &-img {
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      &-price {
+        font-family: 'Russo One', sans-serif;
+        position: absolute;
+        bottom: 2%;
+        left: 2.6%;
+        z-index: 0;
+        overflow: hidden;
+        padding: 5% 5%;
+        background-color: black;
+        color: white;
+      }
+  }

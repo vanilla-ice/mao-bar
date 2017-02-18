@@ -15,123 +15,20 @@ head
     
   body 
 
-    .container
-      .header
-        .logo
-          |Основное Меню   
-        .nav 
-          .nav-item
-            |Главное меню
-          .nav-item
-            |Акции
-          .nav-item
-            |О Нас
-        .my-order
-          input(type="button" value="Мой заказ")  
-      .food
-        .food-list
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-              img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-          .food-item
-            .food-img
-                img(src="../images/food.png")
-            .food-name
-              |Название еды
-  
-        .menu
-          .title
-            |МЕНЮ
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
-          .menu-item
-            |Категория
+  .container
+    include  ./components/header/_index.jade
+    .food
+      .food-list
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+        include ./components/card/_index.jade 
+
+      include ./components/menu/_index.jade
