@@ -14,15 +14,17 @@
 .container {
   max-width: 1024px;
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 0 30px;
+  background-color: #f1f1f1;
 }
 
 .food {
-  margin-top: 50px;
+  padding-top: 50px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+
     &-list {
       display: flex;
       width: 78%;
