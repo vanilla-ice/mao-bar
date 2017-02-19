@@ -20,16 +20,19 @@
 }
 
 .food {
-  padding-top: 50px;
+  padding-top: 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
 
     &-list {
       display: flex;
-      width: 78%;
+      width: 79%;
       flex-flow: row wrap;
       justify-content: flex-start;
+      overflow-y: scroll;
+      padding: 5px 10px;
+      max-height: calc(100vh - 66.8px);
     }
 }
 @import "../components/header/index.scss";
