@@ -4,61 +4,70 @@
 
   .food {
     &-item {
+      margin-left: 2%;
+      margin-bottom: 2%;
       display: flex;
       flex-flow: column;
       justify-content: flex-start;
-      width: 30%;
-      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
-      margin-bottom: 2.2vw;
-      margin-right: 5%;
-      padding: 5px 5px;
+      width: 31.3%;
+      min-height: 233.55px;
       position: relative;
-      background-color: white;
+      background: url("../images/food_1.png") center center no-repeat;
+      background-size: cover;
+      box-shadow:0 0 0 128px rgba(0, 0, 0, 0.33) inset;
+      padding: 10px 10px;
       &:nth-child(3n) {
         margin-right: 0;
       }
     }
 
       &-name {
-        font-family: 'Russo One', sans-serif;
+      font-family: 'Comfortaa', cursive;
+        font-weight: lighter;
         text-align: left;
-        padding: 5px 5px;
-      }
-
-      &-description {
-        font-family: 'Russo One';
-        font-size: 11px;
-        font-weight: 100;
-      }
-
-      &-img {
-        img {
-          display: block;
-          width: 100%;
-        }
-      }
-
-      &-price {
-        font-family: 'Russo One', sans-serif;
-        position: absolute;
-        bottom: 5px;
-        left: 5px;
-        z-index: 0;
-        overflow: hidden;
-        padding: 5% 5%;
-        background-color: black;
         color: white;
+          span {
+            margin-left: 10px;
+            font-size: 11px;
+          }
       }
-      .add-to-card {
-        position: absolute;
-        width: 35px;
-        height: auto;
-        top: -7px;
-        right: -7px;
 
-        img {
-          width: 100%;
-          display: block;
-        }
+      // &-description {
+      //   font-family: 'Russo One';
+      //   font-size: 11px;
+      //   font-weight: 100;
+      // }
+
+      // &-img {
+      //   img {
+      //     display: block;
+      //     width: 100%;
+      //   }
+      // }
+
+      .add-to-card {
+        font-family: 'Comfortaa';
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        padding: 10px;
+        // background-color: #59ABE3;
+        background-color: #e06464;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 3px;
       }
+      // .add-to-card {
+      //   position: absolute;
+      //   width: 35px;
+      //   height: auto;
+      //   top: -7px;
+      //   right: -7px;
+      //
+      //   img {
+      //     width: 100%;
+      //     display: block;
+      //   }
+      // }
   }
