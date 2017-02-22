@@ -1,0 +1,38 @@
+doctype html
+head
+  meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+  meta(name="viewport" content="width=device-width")
+  meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+  link(rel="stylesheet" href="stylesheets/app.css")
+
+  script(src="javascripts/vendor.js")
+  script(src="javascripts/app.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+  script.
+    require('initialize');
+    
+  title MAO Lounge-Bar
+    
+  body 
+    .container
+      .wrapper
+        .product
+          .product-name
+          |Название Товара
+          .product-image
+            img(src="../images/food_1.png")
+          .product-description
+            |Очень красивое описание продукта<br>Много строк и все такое,<br>Очень красивое описание продукта<br>Много строк и все такое,<br>Очень красивое описание продукта<br>Много строк и все такое,<br>Вот прям чтоб захотелось съесть все и сразу
+            span(class="weight") 9999 гр
+          input(type="button" class="add-to-card" value="Добавить за 457 ₽")
+          
+        .recommend
+          .recommend-title
+            |Рекомендуем
+          .recommend-product
+            include ./components/card/_index.jade 
+          .recommend-product
+            include ./components/card/_index.jade 
+          .recommend-product
+            include ./components/card/_index.jade 
+        

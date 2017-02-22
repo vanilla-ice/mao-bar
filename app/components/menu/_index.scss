@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Lobster|Poiret+One&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 .menu {
   display: flex;
   flex-flow: column nowrap;
   width: 15%;
     &-title {
-      font-family: 'Lobster';
+      font-family: 'Open Sans', sans-serif;
       margin-bottom: 5%;
       text-align: center;
     }
     &-item {
-      font-family: 'Comfortaa';
+      font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       text-align: center;
       padding: 10px 0;
-      margin: 1.5% 0;
+      margin: 1% 0;
       border-bottom: 1px solid #ccc;
+
+        &:first-child {
+          padding-top: 0;
+        }
+
         &:last-child {
           border: none;
         }

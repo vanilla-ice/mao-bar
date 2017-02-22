@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Lobster|Poiret+One&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
   // font-family: 'Lobster', cursive;
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Poiret One', cursive;
@@ -34,7 +35,7 @@ body {
       flex-flow: row wrap;
       justify-content: flex-start;
       overflow-y: scroll;
-      max-height: calc(100vh - 66.8px);
+      max-height: calc(100vh - 105px);
     }
 }
 @import "../components/header/index.scss";
