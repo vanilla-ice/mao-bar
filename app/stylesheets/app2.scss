@@ -3,61 +3,66 @@
 
 .wrapper {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: space-around;
+}
 
+.title {
+  width: 100%;
+  font-family: 'Open sans', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px #e0e0e0 solid;
 
 }
 
 .product {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
-  width: 60%;
-  height: 100vh;
+  width: 100%;
   font-family: 'Open sans', sans-serif;
-  padding: 10px;
-  align-self: center;
-
-
-    &-name {
-      padding-bottom: 20px;
-    }
+  align-self: flex-start;
+  padding-top: 20px;
 
 
     &-image {
-        max-height: 400px;
         position: relative;
-        width: 100%;
-        overflow: hidden;
-        height: 400px;
-        border-radius: 5px;
+        width: 50%;
+
         img {
             display: block;
-            min-width: 100%;
-            height: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-height: 100%;
-            transform: translate(-50%, -50%);
+            width: 100%;
         }
     }
 
+    &-info {
+      padding: 10px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 50%;
+    }
+
     &-description {
-      padding: 10px 0;
-      padding-right: 20px;
+      display: block;
+      height: 50%;
       font-size: 14px;
     }
+
     &-weight {
       display: flex;
-      flex-flow: row nowrap;
-      justify-content: flex-end;
-      align-items: center;
-      font-size: 10px;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 14px;
+      font-style: italic;
+      margin-top: 5%;
+
         input {
-          margin-right: 10px;
+          margin: 2% 0;
         }
     }
 }
@@ -79,21 +84,23 @@
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
-  width: 30%;
-  height: 100vh;
+  width: 100%;
 
     &-title {
-      padding-bottom: 20px;
+      text-align: center;
       width: 100%;
+      padding: 20px 0;
     }
     &-product {
-        width: 100%;
-      &:not(:last-child) {
-        margin-bottom: 2%;
-      }
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 0 20px 0;
+
       .food-item {
         margin: 0;
-        width: 100%;
+        width: 30%;
         min-height: 180px;
 
           .add-to-card {
