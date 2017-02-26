@@ -2,6 +2,7 @@
 
 
 .wrapper {
+  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
@@ -38,7 +39,7 @@
     }
 
     &-info {
-      padding: 10px;
+      padding: 0 20px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start;
@@ -50,19 +51,22 @@
       display: block;
       height: 50%;
       font-size: 14px;
+        .weight {
+          font-size: 12px;
+          font-style: italic;
+          margin-top: 10px;
+        }
     }
 
     &-weight {
       display: flex;
       flex-flow: column nowrap;
-      justify-content: flex-start;
+      justify-content: flex-end;
       align-items: flex-start;
-      font-size: 14px;
-      font-style: italic;
-      margin-top: 5%;
+      height: 50%;
 
         input {
-          margin: 2% 0;
+          margin-top: 2%;
         }
     }
 }
@@ -75,6 +79,9 @@
   color: white;
   cursor: pointer;
   border-radius: 3px;
+  &_product-view {
+    padding: 15px 30px;
+  }
 }
 
 .recommend {

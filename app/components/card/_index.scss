@@ -4,6 +4,7 @@
 
   .food {
     &-item {
+      text-decoration: none;
       margin-left: 2%;
       margin-bottom: 2%;
       display: flex;
@@ -26,24 +27,16 @@
         font-weight: 400;
         text-align: left;
         color: white;
-          span {
-            margin-left: 5px;
-            font-size: 11px;
-          }
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
       }
 
-      // &-description {
-      //   font-family: 'Russo One';
-      //   font-size: 11px;
-      //   font-weight: 100;
-      // }
-
-      // &-img {
-      //   img {
-      //     display: block;
-      //     width: 100%;
-      //   }
-      // }
+      &-weight {
+        font-family: 'Open sans', sans-serif;
+        color: white;
+        font-size: 11px;
+      }
 
       .add-to-card {
         font-family: 'Open Sans', sans-serif;
@@ -58,16 +51,4 @@
         cursor: pointer;
         border-radius: 3px;
       }
-      // .add-to-card {
-      //   position: absolute;
-      //   width: 35px;
-      //   height: auto;
-      //   top: -7px;
-      //   right: -7px;
-      //
-      //   img {
-      //     width: 100%;
-      //     display: block;
-      //   }
-      // }
   }
