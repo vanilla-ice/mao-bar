@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #ccc;
+  background-color: #f1f1f1;
 }
 
 
@@ -22,13 +22,14 @@ body {
   background-color: #f1f1f1;
 }
 
-.popup {
+.order-page {
     position: absolute;
-    transform: translate(-50%, -50%);
-    top: 25%;
-    left: 50%;
+    width: 100%;
+    transform: translateX(0);
+    top: 0;
+    left: 0;
     z-index: 1;
-    border: 1px red solid;
+
 }
 
 .food {
