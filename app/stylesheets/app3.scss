@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Slab:300,400,700');
+
+.popup-container {
+  max-width: 565px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #f1f1f1;
+}
+.order {
+  font-family: 'Open sans' sans-serif;
+  color: #666;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+    &-title {
+      padding: 20px 0;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    &-list {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      width: 100%;
+    }
+    .order-item {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      padding-bottom: 10px;
+
+        .name {
+        }
+
+        .price {
+        }
+
+        .conunt {
+          input {
+          }
+        }
+
+        .sum {
+        }
+    }
+
+    &-sum {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      align-self: flex-end;
+      padding: 20px 10px;
+    }
+}

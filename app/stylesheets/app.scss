@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Lobster|Poiret+One&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Slab:300,400,700');
   // font-family: 'Lobster', cursive;
   // font-family: 'Comfortaa', cursive;
   // font-family: 'Poiret One', cursive;
@@ -23,19 +22,28 @@ body {
   background-color: #f1f1f1;
 }
 
+.popup {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
+    z-index: 1;
+    border: 1px red solid;
+}
+
 .food {
   padding-top: 20px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
     &-list {
       display: flex;
-      width: 79%;
+      width: 80%;
       flex-flow: row wrap;
       justify-content: flex-start;
       overflow-y: scroll;
-      max-height: calc(100vh - 105px);
+      max-height: calc(100vh - 100px);
     }
 }
 @import "../components/header/index.scss";

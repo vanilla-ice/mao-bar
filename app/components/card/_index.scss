@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bad+Script|Comfortaa|Lobster|Poiret+One&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Russo+One&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Slab:300,400,700');
 
   .food {
     &-item {
@@ -23,7 +21,7 @@
     }
 
       &-name {
-      font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto Slab', serif;
         font-weight: 400;
         text-align: left;
         color: white;
@@ -33,7 +31,7 @@
       }
 
       &-weight {
-        font-family: 'Open sans', sans-serif;
+        font-family: 'Roboto Slab', serif;
         color: white;
         font-size: 11px;
       }
@@ -44,7 +42,6 @@
         bottom: 10px;
         left: 10px;
         padding: 10px;
-        // background-color: #59ABE3;
         background-color: #e06464;
         border: none;
         color: white;

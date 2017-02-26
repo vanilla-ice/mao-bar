@@ -3,18 +3,13 @@
 .menu {
   display: flex;
   flex-flow: column nowrap;
-  width: 15%;
-    &-title {
-      font-family: 'Open Sans', sans-serif;
-      margin-bottom: 5%;
-      text-align: center;
-    }
+  width: 20%;
+
     &-item {
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       text-align: center;
-      padding: 10px 0;
-      margin: 1% 0;
+      padding: 11.5px 0;
       border-bottom: 1px solid #ccc;
 
         &:first-child {
