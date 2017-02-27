@@ -321,7 +321,9 @@ body {
   box-shadow: 0 0 0 1px #e3e4e8;
   border-radius: 2px;
   height: -webkit-calc(100vh - 120px);
-  height: calc(100vh - 120px);}
+  height: calc(100vh - 120px);
+	min-height: 600px;
+}
   .menu-item {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
