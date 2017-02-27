@@ -3,19 +3,20 @@
 .menu {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
   width: 20%;
-  padding-left: 20px;
+  background-color: #fffffe;
+  box-shadow: 0 0 0 1px #e3e4e8;
+  border-radius: 2px;
+  height: calc(100vh - 120px);
+
 
     &-item {
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
       text-align: center;
-      padding: 11.5px 0;
-      border-bottom: 1px solid #ccc;
-
-        &:first-child {
-          padding-top: 0;
-        }
+      width: 100%;
 
         &:last-child {
           border: none;

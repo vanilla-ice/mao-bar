@@ -10,7 +10,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #f1f1f1;
+  background-color: #edeef0;
+  overflow-x: hidden;
 }
 
 
@@ -18,16 +19,17 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
-  background-color: #f1f1f1;
 }
 
 .order-page {
     position: absolute;
-    width: 100%;
-    transform: translateX(0);
-    top: 0;
-    left: 0;
+    width: 565px;
+    transform: translateX(110%);
+    top: 100px;
+    right: 0;
+    // transform: translateX(0);
+    // top: 100px;
+    // right: 0;
     z-index: 1;
 
 }
@@ -44,7 +46,8 @@ body {
       flex-flow: row wrap;
       justify-content: flex-start;
       overflow-y: scroll;
-      max-height: calc(100vh - 100px);
+      padding-right: 20px;
+      max-height: calc(100vh - 120px);
     }
 }
 @import "../components/header/index.scss";

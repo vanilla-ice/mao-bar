@@ -4,19 +4,24 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding-top: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  padding-right: 5px;
+  background-color: #fffffe;
+  box-shadow: 0 1px 0 0 #d7d8db;
+  border-radius: 2px;
+  max-height: 80px;
 
     .logo {
       width: 20%;
       font-family: 'Open Sans', sans-serif;
       text-align: center;
-      padding: 10px 0;
         img {
-          display: block;
           margin: 0 auto;
-          height: 40px;
-          width: auto;
+          width: 100px;
+          height: auto;
         }
     }
 
@@ -28,11 +33,10 @@
       font-family: 'Open Sans', sans-serif;
       align-items: center;
         &-item {
-          width: 33.33%;
-          padding: 10px 5%;
-          border-right: 1px solid #ccc;
+          padding-right: 50px;
           text-align: center;
-          font-size: 14px;
+          font-size: 16px;
+          font-weight: 600;
             &:last-child{
               border-right: none;
             }
@@ -50,7 +54,7 @@
       max-height: 60px;
       color: #fff;
       background-color: #e06464;
-      padding: 0px 10px;
+      padding: 20px 10px;
       border-radius: 3px;
       position: relative;
 
