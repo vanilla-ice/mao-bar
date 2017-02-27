@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Slab:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Slab:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+body {
+  background-color: #edeef0;
+  overflow-x: hidden; }
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto; }
+
+.order-page {
+  position: absolute;
+  width: 565px;
+  -webkit-transform: translateX(110%);
+      -ms-transform: translateX(110%);
+          transform: translateX(110%);
+  top: 100px;
+  right: 0;
+  z-index: 1; }
+
+.food {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .food-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    overflow-y: scroll;
+    padding-right: 20px;
+    max-height: -webkit-calc(100vh - 120px);
+    max-height: calc(100vh - 120px); }
+    .food-list .food-item:nth-child(2n) {
+      background-image: url(../images/food-item2.jpg); }
+    .food-list .food-item:nth-child(2n+1) {
+      background-image: url(../images/food-item3.jpg); }
+
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  padding-right: 10px;
+  background-color: #fffffe;
+  box-shadow: 0 1px 0 0 #d7d8db;
+  border-radius: 2px;
+  max-height: 80px; }
+  .header .logo {
+    width: 12%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center; }
+    .header .logo img {
+      margin: 0 auto;
+      width: 110px;
+      height: auto; }
+  .header .nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 60%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 13px;
+    cursor: pointer; }
+    .header .nav-item {
+      padding-right: 50px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600; }
+      .header .nav-item:last-child {
+        border-right: none; }
+  .header .my-order {
+    width: 19%;
+    width: 185px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    max-height: 60px;
+    color: #fff;
+    background-color: #e06464;
+    padding: 20px 10px;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer; }
+    .header .my-order .counter {
+      display: block;
+      background-color: #65bae2;
+      color: #fff;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 0%;
+      left: 65%; }
+      .header .my-order .counter span {
+        display: block;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%; }
+    .header .my-order .icon {
+      position: relative;
+      width: 25px; }
+      .header .my-order .icon img {
+        display: block;
+        width: 100%;
+        height: auto; }
+    .header .my-order .summ {
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+      text-align: center; }
+
+.food-item {
+  text-decoration: none;
+  margin-left: 3%;
+  margin-bottom: 2.87vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 31.3%;
+  min-height: 233.55px;
+  position: relative;
+  background: url("../images/food_1.png") center center no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.2) inset, 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  padding: 10px 10px; }
+  .food-item:nth-child(3n-2) {
+    margin-left: 0; }
+  .food-item:nth-child(3n) {
+    margin-right: 0; }
+
+.food-name {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px; }
+
+.food-weight {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 11px; }
+
+.food .add-to-card {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px;
+  background-color: #e06464;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px; }
+
+.menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  min-width: 205px;
+  background-color: #fffffe;
+  box-shadow: 0 0 0 1px #e3e4e8;
+  border-radius: 2px;
+  height: -webkit-calc(100vh - 120px);
+  height: calc(100vh - 120px); }
+  .menu-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    width: 100%; }
+    .menu-item:last-child {
+      border: none; }
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.title {
+  background-color: white;
+  width: 100%;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 1px 0 0 #d7d8db; }
+
+.product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  font-family: 'Open sans', sans-serif;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  padding: 0 10px; }
+  .product-image {
+    position: relative;
+    width: 50%; }
+    .product-image img {
+      display: block;
+      width: 100%; }
+  .product-info {
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 50%; }
+  .product-description {
+    display: block;
+    height: 50%;
+    font-size: 14px; }
+    .product-description .weight {
+      font-size: 12px;
+      font-style: italic;
+      margin-top: 10px; }
+  .product-weight {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: 50%; }
+    .product-weight input {
+      margin-top: 2%; }
+
+.add-to-card {
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  background-color: #e06464;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px; }
+  .add-to-card_product-view {
+    padding: 10px 60px; }
+
+.recommend {
+  font-family: 'Open sans', sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  padding-top: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 0 1px #d7d8db; }
+  .recommend-title {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0; }
+  .recommend-product {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0 0 20px 0; }
+    .recommend-product .food-item {
+      margin: 0;
+      width: 30%;
+      min-height: 180px; }
+      .recommend-product .food-item .add-to-card {
+        position: absolute;
+        bottom: 10px;
+        left: 10px; }
+
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Slab:300,400,700");
+.popup-container {
+  max-width: 565px;
+  width: 100%;
+  padding: 0 30px;
+  background-color: white; }
+
+.order {
+  font-family: 'Open sans' sans-serif;
+  color: #666;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -js-display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  .order-title {
+    width: 100%;
+    text-align: left;
+    padding: 20px 0;
+    font-family: 'Roboto Slab', serif; }
+  .order-list {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    width: 100%; }
+  .order .order-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -js-display: flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 10px; }
+    .order .order-item .del {
+      width: 10px;
+      position: relative; }
+      .order .order-item .del img {
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        left: 50%;
+        top: 43%; }
+  .order-sum {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    padding: 20px 10px; }
+
+
+
+/*# sourceMappingURL=app.css.map*/
