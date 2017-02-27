@@ -322,7 +322,7 @@ body {
   border-radius: 2px;
   height: -webkit-calc(100vh - 120px);
   height: calc(100vh - 120px);
-	min-height: 600px;
+	min-height: 630px;
 }
   .menu-item {
     font-family: 'Open Sans', sans-serif;
