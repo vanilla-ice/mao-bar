@@ -61,6 +61,7 @@ body {
 .container {
   max-width: 1024px;
   width: 100%;
+	min-width: 800px;
   margin: 0 auto; }
 
 .order-page {
@@ -473,8 +474,7 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
-  padding-top: 0;
+  padding: 0 30px 30px 30px;
   width: 100%;
   background-color: white;
   box-shadow: 0 0 0 1px #d7d8db; }
@@ -498,8 +498,7 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
-    padding: 0 0 20px 0; }
+    width: 100%; }
     .recommend-product .food-item {
       margin: 0;
       width: 30%;
