@@ -384,7 +384,7 @@ body {
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
-  padding: 0 10px; }
+  padding: 30px 20px; }
   .product-image {
     position: relative;
     width: 50%; }
