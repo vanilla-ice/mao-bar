@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-
-
+.container {
+min-width: 800px;
+}
 .wrapper {
   height: 100vh;
   display: flex;
@@ -26,7 +26,7 @@
   width: 100%;
   font-family: 'Open sans', sans-serif;
   align-self: flex-start;
-  padding: 0 10px;
+  padding: 20px 30px;
 
 
     &-image {
@@ -40,7 +40,7 @@
     }
 
     &-info {
-      padding: 0 20px;
+      padding-left:20px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: flex-start;
@@ -92,8 +92,7 @@
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px;
-  padding-top: 0;
+  padding: 0 30px 30px 30px;
   width: 100%;
   background-color: white;
   box-shadow: 0 0 0 1px #d7d8db;
@@ -109,7 +108,6 @@
       flex-flow: row nowrap;
       justify-content: space-between;
       width: 100%;
-      padding: 0 0 20px 0;
 
       .food-item {
         margin: 0;

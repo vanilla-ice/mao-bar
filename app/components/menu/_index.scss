@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
-
 .menu {
   display: flex;
   flex-flow: column nowrap;
@@ -11,6 +9,7 @@
   box-shadow: 0 0 0 1px #e3e4e8;
   border-radius: 2px;
   height: calc(100vh - 120px);
+  min-height: 600px;
 
 
     &-item {
@@ -18,7 +17,7 @@
       font-size: 14px;
       text-align: center;
       width: 100%;
-
+      overflow: hidden;
         &:last-child {
           border: none;
         }
