@@ -32,13 +32,20 @@
       font-family: 'Open Sans', sans-serif;
       padding-top: 13px;
       cursor: pointer;
+
+        a {
+          color: #000;
+        }
+
         &-item {
-          padding-right: 50px;
+          padding-left: 50px;
           text-align: center;
           font-size: 16px;
           font-weight: 600;
-            &:last-child{
-              border-right: none;
+          text-decoration: none;
+
+            &:first-child {
+                padding-left: 0;
             }
         }
     }
@@ -59,7 +66,7 @@
       border-radius: 3px;
       position: relative;
       cursor: pointer;
-
+      text-decoration: none;
 
         .counter {
             display: block;

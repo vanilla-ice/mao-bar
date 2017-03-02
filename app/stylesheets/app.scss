@@ -16,20 +16,9 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 
-.order-page {
-    position: absolute;
-    width: 565px;
-    transform: translateX(110%);
-    top: 100px;
-    right: 0;
-    // transform: translateX(0);
-    // top: 100px;
-    // right: 0;
-    z-index: 1;
-
-}
 
 .food {
   padding-top: 20px;
@@ -54,6 +43,7 @@ body {
         }
     }
 }
-@import "../components/header/index.scss";
-@import "../components/card/index.scss";
-@import "../components/menu/index.scss";
+@import "../components/header/_index.scss";
+@import "../components/card/_index.scss";
+@import "../components/menu/_index.scss";
+@import "../components/basket-popup/_index.scss";

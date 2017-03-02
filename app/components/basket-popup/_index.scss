@@ -1,0 +1,51 @@
+@import "../basket-item/_index.scss";
+
+.popup {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    top: 70px;
+    right: 0px;
+    box-shadow: 0 0px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+}
+
+.popup-opened {
+  display: block;
+}
+
+.order {
+  padding: 0 20px;
+  max-width: 565px;
+  font-family: 'Open sans', sans-serif;
+  color: #666;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgb(215, 216, 219) 0px 1px 0px 0px;
+
+    &-title {
+      width: 100%;
+      text-align: left;
+      padding: 20px 0;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    &-list {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      width: 100%;
+      padding: 0 30px;
+    }
+
+
+    &-sum {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      align-self: flex-end;
+      padding: 20px 10px;
+    }
+}

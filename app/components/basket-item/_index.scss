@@ -1,0 +1,61 @@
+.order-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+    .name {
+      text-align: left;
+      width: 210px;
+      margin-left: 10px;
+    }
+
+    .price {
+      text-align: center;
+      min-width: 50px;
+    }
+
+    .count {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      min-width: 100px;
+
+      .plus, .minus {
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 0 10px;
+      }
+
+      input[type="tel"] {
+        border: none;
+        background-color: #ccc;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        font-family: "open sans", sans-serif;
+        font-weight: 600;
+      }
+    }
+
+    .sum {
+      text-align: center;
+      min-width: 50px;
+    }
+
+    .del {
+      width: 15px;
+      height: 15px;
+      min-width: 15px;
+      min-height: 15px;
+      position: relative;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+}

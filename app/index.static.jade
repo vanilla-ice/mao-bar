@@ -9,16 +9,14 @@ head
   script(src="javascripts/app.js")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
   script.
-    require('initialize');
+    require('initialize.js');
     
   title MAO Lounge-Bar
     
   body 
-
   
+  include ./components/basket-popup/_index.jade
   .container
-    .order-page
-      include basket.static.jade
     include  ./components/header/_index.jade
     .food
       .food-list
