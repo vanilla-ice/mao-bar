@@ -18,6 +18,8 @@
       text-align: center;
       width: 100%;
       overflow: hidden;
+      user-select: none;
+      
         &:last-child {
           border: none;
         }

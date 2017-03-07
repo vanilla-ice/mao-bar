@@ -1,13 +1,15 @@
 .container {
 min-width: 800px;
 }
+
 .wrapper {
-  height: 100vh;
-  min-height: 800px;
+  padding: 10px 0;
+  max-height: 100vh;
+  min-height: 700px;
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .title {
