@@ -1,0 +1,38 @@
+.menu-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.bar, .kitchen, .smoke {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 44px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,1);
+  text-decoration: none;
+  color: #fff;
+  margin-right: 1%;
+  letter-spacing: 3px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100vh;
+}
+
+.kitchen {
+  background-image: url("../images/kitchen.jpg");
+  background-position: center;
+}
+
+.bar {
+  background-image: url("../images/bar.jpg");
+  background-position: right;
+}
+
+.smoke {
+  background-image: url(../images/shisha.jpg);
+  background-size: cover;
+  background-position: right;
+  margin-right: 0;
+}

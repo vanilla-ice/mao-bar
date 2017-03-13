@@ -13,7 +13,7 @@ head
     
   title MAO Lounge-Bar
     
-  body 
+  body.product-page 
     .container
       .wrapper
         .title
@@ -25,15 +25,15 @@ head
             .product-description
               |Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
               .weight 9999 гр 
-            .product-weight 
+            .add-button 
               input.add-to-card.add-to-card_product-view(type="button" value="Добавить за 457 ₽")
           
-        .recommend
-          .recommend-title
-            |Рекомендуем
-          .recommend-product
-            include ./components/card/_index.jade 
-            include ./components/card/_index.jade 
-            include ./components/card/_index.jade 
+      .recommend
+        .recommend-title
+          |Рекомендуем
+        .recommend-product
+          include ./components/card/_index.jade 
+          include ./components/card/_index.jade 
+          include ./components/card/_index.jade 
 
         
