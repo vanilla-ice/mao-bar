@@ -16,8 +16,10 @@ head
   body.product-page 
     .container
       .wrapper
-        .title
-          |Lorem Ipsum
+        .title 
+          .name Lorem Ipsum
+          a.back(href="javascript:history.back()") 
+              img(src="./images/back.svg")
         .product
           .product-image
             img(src="./images/food_1.png")

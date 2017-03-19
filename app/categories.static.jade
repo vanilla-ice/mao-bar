@@ -15,8 +15,13 @@ head
     
   body 
   
-.container
-  .menu-wrapper
-    a.kitchen(href="./categories.html") КУХНЯ 
-    a.bar(href="./categories.html") БАР
-    a.smoke(href="./categories.html") КАЛЬЯН
+  include ./components/basket-popup/_index.jade
+  .container
+    include  ./components/header/_index.jade
+    .food
+      .categorie-list
+        include ./components/categorie/_index.jade 
+        include ./components/categorie/_index.jade 
+        include ./components/categorie/_index.jade 
+
+      include ./components/menu/_index.jade

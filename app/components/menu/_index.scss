@@ -1,15 +1,16 @@
 .menu {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
   width: 20%;
   min-width: 205px;
   background-color: #fffffe;
   box-shadow: 0 0 0 1px #e3e4e8;
   border-radius: 2px;
-  height: calc(100vh - 120px);
-  min-height: 600px;
+  max-height: calc(100vh - 120px);
+  overflow-y: scroll;
+
 
 
     &-item {
@@ -17,9 +18,9 @@
       font-size: 14px;
       text-align: center;
       width: 100%;
-      overflow: hidden;
-      user-select: none;
-      
+      height: 20px;
+      padding: 20px 0;
+
         &:last-child {
           border: none;
         }
