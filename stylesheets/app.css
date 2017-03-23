@@ -571,7 +571,7 @@ body {
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
           align-self: flex-start;
-  padding-right: 30px;
+          padding: 0 15px;
   margin-top: 10px;
   min-height: 250px;
   -webkit-box-flex: 1;
@@ -614,7 +614,7 @@ body {
     .product-description .weight {
       font-size: 12px;
       font-style: italic;
-      padding-top: 10px; }
+      padding-top: 15px; }
   .product .add-button input {
     margin-top: 14px; }
 
