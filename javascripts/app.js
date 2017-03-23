@@ -147,40 +147,6 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("components/product_view/index.jade", function(exports, require, module) {
-module.exports = function template(locals) {
-var jade_debug = [ new jade.DebugItem( 1, "app\\components\\product_view\\index.jade" ) ];
-try {
-var buf = [];
-var jade_mixins = {};
-var jade_interp;
-
-var jade_indent = [];
-jade_debug.unshift(new jade.DebugItem( 0, "app\\components\\product_view\\index.jade" ));
-jade_debug.shift();;return buf.join("");
-} catch (err) {
-  jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, "");
-}
-};
-});
-
-require.register("components/recommended/index.jade", function(exports, require, module) {
-module.exports = function template(locals) {
-var jade_debug = [ new jade.DebugItem( 1, "app\\components\\recommended\\index.jade" ) ];
-try {
-var buf = [];
-var jade_mixins = {};
-var jade_interp;
-
-var jade_indent = [];
-jade_debug.unshift(new jade.DebugItem( 0, "app\\components\\recommended\\index.jade" ));
-jade_debug.shift();;return buf.join("");
-} catch (err) {
-  jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, "");
-}
-};
-});
-
 require.register("initialize.js", function(exports, require, module) {
 'use strict';
 
