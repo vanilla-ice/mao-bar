@@ -2,7 +2,7 @@
     &-item {
       text-decoration: none;
       margin-left: 3%;
-      margin-bottom: 3%;
+      margin-top: 4.5vh;
       display: flex;
       flex-flow: column;
       justify-content: flex-start;
@@ -14,8 +14,11 @@
       border-radius: 2px;
       box-shadow: 0 0 0 128px rgba(0, 0, 0, 0.2) inset, 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-
       padding: 10px 10px;
+
+        &:nth-child(-n+3) {
+          margin-top: 0;
+        }
         &:nth-child(3n-2) {
           margin-left: 0;
         }
@@ -47,7 +50,7 @@
         bottom: 10px;
         left: 10px;
         padding: 10px;
-        background-color: #e06464;
+        background-color: #4890b6;
         border: none;
         color: white;
         cursor: pointer;

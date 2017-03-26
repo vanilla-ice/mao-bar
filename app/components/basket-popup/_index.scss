@@ -11,12 +11,13 @@
 
 .popup-opened {
   display: block;
-  // opacity: 0.9;
 }
 
 .order {
+  max-height: calc(100vh - 120px);
   padding: 0 50px;
   max-width: 565px;
+  min-height: 190px;
   font-family: 'Open sans', sans-serif;
   color: #666;
   display: flex;
@@ -38,7 +39,9 @@
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 14px;
+      min-height: 60px;
       width: 100%;
+      overflow-y: auto;
     }
 
 
