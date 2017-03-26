@@ -11,7 +11,7 @@
   box-shadow: 0 1px 0 0 #d7d8db;
   border-radius: 2px;
   user-select: none;
-  
+
     .logo {
       width: 12%;
       font-family: 'Open Sans', sans-serif;
@@ -28,8 +28,8 @@
       flex-flow: row nowrap;
       justify-content: flex-start;
       width: 60%;
+      height: 100%;
       font-family: 'Open Sans', sans-serif;
-      padding-top: 13px;
       cursor: pointer;
       user-select: none;
 
@@ -38,15 +38,17 @@
         }
 
         &-item {
+          display: flex;
+          flex-flow: row nowrap;
+          align-items: center;
           padding-left: 50px;
           text-align: center;
           font-size: 16px;
-          font-weight: 600;
+          color: #fff;
           text-decoration: none;
-
-            &:first-child {
-                padding-left: 0;
-            }
+          background-color: #e06464;
+          padding: 0px 45px;
+          border-right: 2px solid #fff;
         }
     }
 
