@@ -73,6 +73,7 @@
         img {
             display: block;
             width: 100%;
+            border-radius: 2px;
         }
     }
 
@@ -110,7 +111,7 @@
 .add-to-card {
   font-family: 'Open Sans', sans-serif;
   padding: 10px;
-  background-color: #e06464;
+  background-color: #4890b6;
   border: none;
   color: white;
   cursor: pointer;

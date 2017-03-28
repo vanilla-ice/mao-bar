@@ -27,7 +27,7 @@
 .bar, .kitchen, .smoke {
   font-family: "Roboto Slab", sans-serif;
   font-size: 44px;
-  text-shadow: 2px 2px 2px rgba(0,0,0,1);
+  text-shadow: 1px 1px 1px rgba(0,0,0,1);
   text-decoration: none;
   color: #fff;
   margin-right: 1%;
@@ -38,6 +38,7 @@
   align-items: center;
   width: 33%;
   height: 100vh;
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.3) inset;
 }
 
 .kitchen {
